@@ -1,0 +1,91 @@
+baseURL: https://happyhappy-jun.github.io/
+languageCode: en-us
+title: happyhappy's daily blog
+theme: PaperMod
+
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # assets:
+  #   # disableHLJS: true # to disable highlight.js
+  #   # disableFingerprinting: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
+
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
+
+  profileMode:
+    enabled: True # needs to be explicitly set
+    title: happyhappy's daily blog
+    subtitle: 개발, 투자, 그 외  잡다한 이야기가 함께하는 블ㅗㅡ
+    # imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+  
+  menu:
+    main:
+      - identifier: categories
+        name: categories
+        url: /categories/
+        weight: 10
+      - identifier: tags
+        name: tags
+        url: /tags/
+        weight: 20
+      - identifier: example
+        name: example.org
+        url: https://example.org
+        weight: 30
