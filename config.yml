@@ -54,14 +54,14 @@ params:
   profileMode:
     enabled: True # needs to be explicitly set
     title: happyhappy's daily blog
-    subtitle: 개발, 투자, 그 외  잡다한 이야기가 함께하는 블ㅗㅡ
+    subtitle: 개발, 투자, 그 외  잡다한 이야기가 함께하는 블로그
     # imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
     buttons:
-      - name: Posts
-        url: content/posts
+      - name: Post
+        url: posts
       - name: Tags
         url: tags
 
@@ -74,18 +74,3 @@ params:
     URL: "https://github.com/<path_to_repo>/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
-  
-  menu:
-    main:
-      - identifier: categories
-        name: categories
-        url: /categories/
-        weight: 10
-      - identifier: tags
-        name: tags
-        url: /tags/
-        weight: 20
-      - identifier: example
-        name: example.org
-        url: https://example.org
-        weight: 30
