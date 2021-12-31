@@ -1,13 +1,14 @@
-baseURL: https://happyhappy-jun.github.io/
-languageCode: en-us
-title: happyhappy's daily blog
+baseURL: "https://examplesite.com/"
+title: happyhappy's blog
+paginate: 5
 theme: PaperMod
-
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
@@ -15,10 +16,11 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  title: happyhappy's blog
+  description: 개발, 투자, 그 외 다양한 잡다한 이야기를 적는 공간
+  keywords: [Blog, Diary, Dev, Blockchain]
   author: Me
+  # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -31,46 +33,133 @@ params:
   ShowCodeCopyButtons: false
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: false
   tocopen: false
 
-  # assets:
-  #   # disableHLJS: true # to disable highlight.js
-  #   # disableFingerprinting: true
-  #   favicon: "<link / abs url>"
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "profile-image-round.jpeg"
   #   favicon16x16: "<link / abs url>"
   #   favicon32x32: "<link / abs url>"
   #   apple_touch_icon: "<link / abs url>"
   #   safari_pinned_tab: "<link / abs url>"
 
-  # label:
-  #   text: "Home"
-  #   icon: /apple-touch-icon.png
-  #   iconHeight: 35
+  label:
+    text: "happyhappy's blog"
+    # icon: "profile-image.jpeg"
+    # iconHeight: 35
 
+  # profile-mode
   profileMode:
-    enabled: True # needs to be explicitly set
-    title: happyhappy's daily blog
-    subtitle: 개발, 투자, 그 외  잡다한 이야기가 함께하는 블로그
-    # imageUrl: "<img location>"
+    enabled: false # needs to be explicitly set
+    title: 해피해피의 작업실
+    subtitle: "개발, 투자, 성장, 놀러가기등 잡다한 이야기를 올리는 공간입니다"
+    imageUrl: "profile-image-round.jpeg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "Unknown"
     buttons:
-      - name: Post
-        url: posts
+      - name: Archives
+        url: archives
       - name: Tags
         url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "해피해피의 작업실이에요 \U0001F44B"
+    Content: "개발, 투자, 성장, 놀러가기등 잡다한 이야기를 올리는 공간입니다"
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+    main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 10
+
+
+taxonomies:
+    category: categories
+    tag: tags
+    series: series
+
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
