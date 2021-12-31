@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://happyhappy-jun.github.io/sitemap.xml
+Sitemap: https://examplesite.com/sitemap.xml

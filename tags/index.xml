@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on happyhappy&#39;s daily blog</title>
-    <link>https://happyhappy-jun.github.io/tags/</link>
-    <description>Recent content in Tags on happyhappy&#39;s daily blog</description>
+    <title>Tags on happyhappy&#39;s blog</title>
+    <link>https://examplesite.com/tags/</link>
+    <description>Recent content in Tags on happyhappy&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://happyhappy-jun.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Dec 2021 01:20:07 +0900</lastBuildDate><atom:link href="https://examplesite.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>diary</title>
+      <link>https://examplesite.com/tags/diary/</link>
+      <pubDate>Fri, 31 Dec 2021 01:20:07 +0900</pubDate>
+      
+      <guid>https://examplesite.com/tags/diary/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
