@@ -41,6 +41,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           external_repository: happyhappy-jun/happyhappy-jun.github.io
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
           publish_branch: master
           publish_dir: ./public
