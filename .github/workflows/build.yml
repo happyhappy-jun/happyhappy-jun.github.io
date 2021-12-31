@@ -31,5 +31,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
+          external_reposityory: happyhappy-jun/happyhappy-jun.github.io
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
           publish_dir: ./public
