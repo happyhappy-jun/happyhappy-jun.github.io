@@ -13,14 +13,14 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - name: install deploy keys
-      env:
-        GH_ACTION_DEPLOY_KEY: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: install deploy keys
+        env:
+          GH_ACTION_DEPLOY_KEY: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - uses: actions/checkout@v2
         with:
