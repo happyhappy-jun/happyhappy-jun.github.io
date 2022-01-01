@@ -1,5 +1,5 @@
 baseURL: "https://happyhappy-jun.github.io/"
-title: happyhappy's blog
+title: 해피해피한 인생
 paginate: 5
 theme: PaperMod
 
@@ -40,18 +40,18 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "profile-image-round.jpeg"
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-squinting-face_1f606.png"
   #   favicon16x16: "<link / abs url>"
   #   favicon32x32: "<link / abs url>"
   #   apple_touch_icon: "<link / abs url>"
   #   safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "happyhappy's blog"
-    # icon: "profile-image.jpeg"
-    # iconHeight: 35
+    text: "해피해피한 인생"
+    icon: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-squinting-face_1f606.png"
+    iconHeight: 35
 
   # profile-mode
   profileMode:
