@@ -2,14 +2,14 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 # weight: 1
-# tags: 
+# tags: []
 author: "Byungjun Yoon"
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-# themes: []
+# categories: []
 # description: ""
 disableHLJS: true 
 disableShare: false
