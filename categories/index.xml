@@ -15,23 +15,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>diary</title>
-      <link>https://happyhappy-jun.github.io/categories/diary/</link>
-      <pubDate>Fri, 31 Dec 2021 01:20:07 +0900</pubDate>
-      
-      <guid>https://happyhappy-jun.github.io/categories/diary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://happyhappy-jun.github.io/categories/test/</link>
-      <pubDate>Fri, 31 Dec 2021 01:20:07 +0900</pubDate>
-      
-      <guid>https://happyhappy-jun.github.io/categories/test/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
