@@ -17,8 +17,8 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: happyhappy's blog
-  description: 개발, 투자, 그 외 다양한 잡다한 이야기를 적는 공간
-  keywords: [Blog, Diary, Dev, Blockchain]
+  description: 잡다한 이야기를 적는 공간
+  keywords: [Blog, Diary, Dev]
   author: Me
   # author: ["Me", "You"] # multiple authors
   # images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -57,7 +57,7 @@ params:
   profileMode:
     enabled: false # needs to be explicitly set
     title: 해피해피의 작업실
-    subtitle: "개발, 투자, 성장, 놀러가기등 잡다한 이야기를 올리는 공간입니다"
+    subtitle: "잡다한 이야기"
     imageUrl: "profile-image-round.jpeg"
     imageWidth: 120
     imageHeight: 120
@@ -70,8 +70,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "해피해피의 작업실이에요 \U0001F44B"
-    Content: "개발, 투자, 성장, 놀러가기등 잡다한 이야기를 올리는 공간입니다"
+    Title: "해피해피의 작업실 \U0001F44B"
+    subtitle: "잡다한 이야기"
 
   socialIcons:
     - name: twitter
