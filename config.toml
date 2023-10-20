@@ -1,0 +1,152 @@
+baseURL = "https://happyhappy-jun.github.io/"
+title = "해피해피한 인생"
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "happyhappy's blog"
+description = "잡다한 이야기를 적는 공간"
+keywords = [ "Blog", "Diary", "Dev" ]
+author = "Me"
+math = true
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  disableHLJS = true
+  disableFingerprinting = true
+  favicon = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-squinting-face_1f606.png"
+
+  [params.label]
+  text = "해피해피한 인생"
+  icon = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-squinting-face_1f606.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "해피해피의 작업실"
+  subtitle = "잡다한 이야기"
+  imageUrl = "profile-image-round.jpeg"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "Unknown"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "해피해피의 작업실 👋"
+  subtitle = "잡다한 이야기"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/"
+
+  [[params.socialIcons]]
+  name = "stackoverflow"
+  url = "https://stackoverflow.com"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[[menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+style = "monokai"
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
