@@ -150,3 +150,8 @@ disableInlineCSS = true
 
 [services.twitter]
 disableInlineCSS = true
+
+[sitemap]
+  changeFreq = 'always'
+  filename = 'sitemap.xml'
+  priority = -1
