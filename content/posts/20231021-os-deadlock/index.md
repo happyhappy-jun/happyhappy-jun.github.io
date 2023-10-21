@@ -1,3 +1,35 @@
+---
+title: "20231021 Os Deadlock"
+date: 2023-10-21T15:58:54+09:00
+# weight: 1
+# tags: []
+author: "Byungjun Yoon"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+# categories: []
+# description: ""
+disableHLJS: true 
+disableShare: false
+disableHLJS: false
+hideSummary: false
+searchHidden: false
+ShowReadingTime: true
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+# cover:
+#     image: "<image path/url>" # image path/url
+#     alt: "<alt text>" # alt text
+#     caption: "<text>" # display caption under cover
+#     relative: false # when using page bundles set this to true
+#     hidden: true # only hide on current single page
+# editPost:
+#     URL: "https://github.com/<path_to_repo>/content"
+#     Text: "Suggest Changes" # edit text
+#     appendFilePath: true # to append file path to Edit link
+---
 # Deadlock
 멀티프로세스 환경에서 여러 프로세스들은 제한된 개수의 자원을 가지고 경쟁을 하게 된다. 따라서, 어떠한 프로세스ㅌ는 필연적으로 대기를 하게 된다. 이러한 대기 상태에서 그 프로세스가 다시 상태가 못 변하는 상황을 우리는 deadlock 이라고 부른다. 좀 더 포멀하게 정의하자면, 어떠한 셋의 프로세스가 모두 대기 상태에 있고, 그 대기 상태를 초래한 프로세스가 그 셋 안에 있을 때, 이 셋의 프로세스는 데드락 상태에 있다고 말할 수 있다. 
 
