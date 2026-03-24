@@ -16,5 +16,4 @@ Research Interests
 - Robot Learning
 - Synthetic Data Generation
 - Simulation-based Validation
-- Reinforcement Learning
 - Computer Vision for Robotics
